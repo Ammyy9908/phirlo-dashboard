@@ -1,0 +1,55 @@
+.app{
+  width: 100%;
+  height: 100vh;
+  display:block;
+  grid-template-columns: 215px 2fr;
+  grid-template-areas: "sidebar" "main";
+  
+}
+
+.non_auth_app{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.non_auth_wrapper{
+  width: 95%;
+}
+
+.admin_form{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.chart_container canvas{
+  height: auto;
+}
+
+@media screen and (min-width:768px){
+  .admin_form{
+    width: 50%;
+  }
+  .chart_container canvas{
+    height: 350px;
+  }
+  .dashboard_table_header_search{
+    width:350px;
+  }
+
+}
+
+@media screen and (min-width:1060px){
+  .admin_form{
+    width: 35%;
+  }
+}
+
+@media screen and (min-width:1048px){
+  .app{
+    display: grid;
+  }
+}
